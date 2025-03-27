@@ -1,0 +1,19 @@
+name: processing
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - pyyaml
+  - tqdm
+  - tifffile
+  - pip
+  - pip:
+      - plotly

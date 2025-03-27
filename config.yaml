@@ -1,0 +1,43 @@
+# === DATOS ===
+
+# Ruta a las carpetas tipo CellX/NoiseX
+datos_dir: "C:/Users/IR_USER/Desktop/SparkSimple_cells"
+
+# Células a usar
+usar_celulas:
+  - Cell2
+  - Cell3
+  - Cell4
+
+# Niveles de ruido (Noise0 se usa como limpio)
+niveles_ruido: [1, 2, 5, 10, 20]
+
+# === ENTRENAMIENTO ===
+
+# Tamaño del batch por paso
+batch_size: 2
+
+# Número de épocas
+num_epochs: 20
+
+# Tasa de aprendizaje
+learning_rate: 0.001
+
+# Usar GPU si está disponible
+usar_gpu: true
+
+# === SALIDAS ===
+
+# Ruta para guardar el modelo
+guardar_modelo_en: "./modelos/modelo_autoencoder.pth"
+
+# Carpeta para guardar resultados
+guardar_resultados_en: "./resultados/"
+
+# === OPCIONAL: Resize de imágenes ===
+
+# Redimensionar imágenes al cargar
+resize:
+  enabled: false
+  height: 220
+  width: 900

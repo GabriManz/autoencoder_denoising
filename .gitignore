@@ -1,0 +1,40 @@
+# === PYTHON ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.conda
+
+# === NOTEBOOKS ===
+.ipynb_checkpoints/
+
+# === SISTEMA OPERATIVO ===
+.DS_Store
+Thumbs.db
+
+# === ENTORNOS VIRTUALES ===
+env/
+.venv/
+venv/
+.env/
+
+# === ARCHIVOS TEMPORALES / LOGS ===
+*.log
+*.tmp
+
+# === DATOS GRANDES / RESULTADOS (se mantienen solo los .gitkeep) ===
+datos/*
+!datos/.gitkeep
+
+modelos/*
+!modelos/.gitkeep
+
+resultados/*
+!resultados/.gitkeep
+
+# === ARCHIVOS BINARIOS / EXPORTACIONES ===
+*.tif
+*.npy
+*.zip
+*.pth

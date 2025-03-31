@@ -8,22 +8,25 @@ Este proyecto implementa un autoencoder convolucional en PyTorch para eliminar r
 
 ```
 autoencoder_denoise/
-├── data/              ← TIFFs (no versionar)
+
+├── modelos/            ← Pesos .pth
 │   └── .gitkeep
-├── modelos/           ← Pesos .pth
+├── resultados/         ← Salidas, gráficas
 │   └── .gitkeep
-├── resultados/        ← Salidas, gráficas
-│   └── .gitkeep
-├── autoencoder.py     ← Definición del modelo
-├── dataset.py         ← Carga de datos
-├── train.py           ← Entrenamiento
-├── evaluate.py        ← Evaluación y visualización
-├── config.yaml        ← Parámetros de configuración
-├── requirements.txt   ← Instalación vía pip
-├── environment.yml    ← Instalación vía conda
-├── README.md          ← Documentación del proyecto
-├── LICENSE            ← Licencia del código
-└── .gitignore         ← Archivos a excluir
+├── notebooks/          ← Notebooks de Jupyter para experimentación
+│   ├── preprocesamiento.ipynb   ← Denoising y análisis de datos
+│   ├── entrenamiento.ipynb      ← Entrenamiento del autoencoder
+│   └── evaluación.ipynb         ← Evaluación y visualización de resultados
+├── autoencoder.py      ← Definición del modelo
+├── dataset.py          ← Carga de datos
+├── train.py            ← Entrenamiento
+├── evaluate.py         ← Evaluación y visualización
+├── config.yaml         ← Parámetros de configuración
+├── requirements.txt    ← Instalación vía pip
+├── environment.yml     ← Instalación vía conda
+├── README.md           ← Documentación del proyecto
+├── LICENSE             ← Licencia del código
+└── .gitignore          ← Archivos a excluir
 ```
 
 ---
